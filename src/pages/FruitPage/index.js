@@ -8,15 +8,15 @@ const FruitsPage = () => {
   return (
     <div className="container">
       {fruits.map((fruit) => (
-        <p key={fruit}>
-          {fruit.name}
+        <div className="content">
+          <p key={fruit}> {fruit.name} </p>
           <img
             src={fruit.image}
             alt={fruit.name}
             width="200px"
             height="200px"
           />
-        </p>
+        </div>
       ))}
     </div>
   );
